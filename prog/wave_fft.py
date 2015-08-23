@@ -1,4 +1,4 @@
-# coding: utf-8
+# coding:utf-8
 # waveファイルを読み込み、fftをする
 
 import wave
@@ -40,6 +40,7 @@ class WaveData:
 				output=True)
 
 		# チャンク単位でストリームに音声を出力
+		# chunk = 1024
 		chunk = 1024
 		data = self.wavedata.readframes(chunk)
 		while data != '':
