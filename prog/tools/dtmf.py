@@ -80,6 +80,8 @@ class DTMF():
         elif(number == '*'):
             row = 3
             col = 0
+        elif(number == 'N'): # 周波数0(音が出ない)を作成する
+            return ( 0, 0)
         else:
             num = int(number)-1
             row = int(num / 3)
