@@ -21,7 +21,12 @@ python main.py
 ![実行コマンド](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/start.png)
 
 プログラムが開始すると、しばらくしてからスペクトルを表示するウィンドウが立ち上がります。
+![スペクトル](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/spec.png)
+
 この状態から約10秒間の録音が始まり、その間にリアルタイムでSTFT(短時間フーリエ変換)を行い入力をスペクトルに変換したものがリアルタイムで表示されます。
+また、最も大きい音の周波数に対応する音階を表示します
+![変換](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/do.png)
+
 
 録音終了後、ある一定値以上の入力に対して、対応する音階と時間を求めます。
 
