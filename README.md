@@ -12,13 +12,13 @@
 cd $HOME/Develop/5/bunpatu2015/prog/
 pyenv shell anaconda-2.1.0
 ```
-![初回設定](https://raw.githubusercontent.com/wiki/takunoko/music_dtmf/README_files/setting.png "実行コマンド")
+![初回設定](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/setting.png "実行コマンド")
 
 ### 実行コマンド
 ```shell
 python main.py
 ```
-![実行コマンド](https://raw.githubusercontent.com/wiki/takunoko/music_dtmf/README_files/start.png)
+![実行コマンド](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/start.png)
 
 プログラムが開始すると、しばらくしてからスペクトルを表示するウィンドウが立ち上がります。
 この状態から約10秒間の録音が始まり、その間にリアルタイムでSTFT(短時間フーリエ変換)を行い入力をスペクトルに変換したものがリアルタイムで表示されます。
