@@ -14,7 +14,7 @@ from play_wave import PLAY_WAVE
 phone_scale = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '#', '0', '*']
 
 # 音声出力フィアルの保存名
-FILE_NAME = 'sample_01'
+FILE_NAME = 'csv_sample_01'
 
 # 生成する音の大きさ 最大値は1.0
 DTMF_AMPLITUDE = 1.0

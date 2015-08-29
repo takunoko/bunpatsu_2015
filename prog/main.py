@@ -202,7 +202,7 @@ class C_spectrumAnalyzer():
 
         sound_data = []
         # 適当に5秒間実行して終了
-        for n in xrange(0, self.fs * 10 / self.chunk):
+        for n in xrange(0, self.fs * 7 / self.chunk):
             try:
                 # dataは文字列型
                 data = self.stream.read(self.chunk)
@@ -221,7 +221,7 @@ class C_spectrumAnalyzer():
             spec = abs(fftspec[1: fftLen / 2 + 1]) * signal_scale  # スペクトル
             # print('Max : %.5f' % freq_list[np.argmax(spec)])
 
-            if max(spec) >= 200 and np.argmax(spec) > 3:
+            if max(spec) >= 2000 and np.argmax(spec) > 3:
                 print('spec: %s' % str(max(spec)))
                 max_list_num = np.argmax(spec)
                 print('Max : %8.3f , %s, %s' % (

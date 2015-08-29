@@ -21,6 +21,8 @@ python main.py
 
 ![実行コマンド](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/start.png)
 
+たぶん、方向キー ↑ で表示されます。
+
 プログラムが開始すると、しばらくしてからスペクトルを表示するウィンドウが立ち上がります。
 
 ![スペクトル](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/spec.png)
