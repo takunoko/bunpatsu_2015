@@ -18,13 +18,16 @@ pyenv shell anaconda-2.1.0
 ```shell
 python main.py
 ```
+
 ![実行コマンド](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/start.png)
 
 プログラムが開始すると、しばらくしてからスペクトルを表示するウィンドウが立ち上がります。
+
 ![スペクトル](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/spec.png)
 
 この状態から約10秒間の録音が始まり、その間にリアルタイムでSTFT(短時間フーリエ変換)を行い入力をスペクトルに変換したものがリアルタイムで表示されます。
 また、最も大きい音の周波数に対応する音階を表示します
+
 ![変換](https://raw.githubusercontent.com/takunoko/music_dtmf/master/README_files/do.png)
 
 
@@ -65,9 +68,15 @@ python main.py
 
 ## DTMF
 詳しくは、[Wikipedia](http://www.wikiwand.com/ja/DTMF)とかを参照してもらえるとわかりやすいです。
-ざっくり説明すると、0~9,*,#にそれぞれが2種類のsin波をたし合わせたもので表現されているということです。この音が「ピッポッパッ」と聞こえるわけです
+ざっくり説明すると、0~9,*,#にそれぞれが2種類のsin波をたし合わせたもので表現されているということです。この音が「ピッポッパッ」と聞こえるわけです。
 
+## ピアノの音階 周波数について
+ピアノは1オクターブに白盤と黒盤が計12鍵でそれぞれ2の12乗根ずつ周波数が増えていきます。
 
+基準?となる周波数は左から49番目のラの音が440[Hz]で次の鍵盤(ラ#)は440*(2の12乗根 = 1.0594630943592953) = 466.1637615180899となります。
+そして、12鍵上のラは880[Hz]となります。
 
+一番左の鍵盤は27.5[Hz]のラとなっています。 
 
+[ピアノの音・周波数について | SUGIURA](http://pianolabo-sugiura.com/?p=1542)
 
